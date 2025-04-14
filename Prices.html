@@ -134,7 +134,7 @@
     <!-- Two Large Images Side by Side -->
     <section class="price-images">
         <div class="image-box">
-            <h3>Serving Guide 1</h3>
+            <h3>Serving Guide Two Layer</h3>
           <a href="images/servingguide1.png" data-lightbox="guides" data-title="Serving Guide 1">
             <img src="images/servingguide1.png" alt="Serving Guide 1">
           </a>
@@ -142,7 +142,7 @@
         </div>
       
         <div class="image-box">
-            <h3>Serving Guide 2</h3>
+            <h3>Serving Guide One Layer</h3>
           <a href="images/servingguide2.png" data-lightbox="guides" data-title="Serving Guide 2">
             <img src="images/servingguide2.png" alt="Serving Guide 2">
           </a>
@@ -158,5 +158,30 @@
     <p>Bake Me Pretty by Claire | Made with ❤️</p>
   </footer>
   <script src="js/lightbox-plus-jquery.js"></script>
+  <!-- Your custom close button -->
+<button id="custom-close">Close</button>
+
+<script>
+  // Wait for the page to load
+  window.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.getElementById("custom-close");
+
+    // Check every 300ms if lightbox is open
+    setInterval(function () {
+      const overlay = document.querySelector('.lightboxOverlay');
+      if (overlay && overlay.style.display === 'block') {
+        closeBtn.style.display = 'block';
+      } else {
+        closeBtn.style.display = 'none';
+      }
+    }, 300);
+
+    // Close lightbox when clicking the button
+    closeBtn.addEventListener('click', function () {
+      const overlay = document.querySelector('.lightboxOverlay');
+      if (overlay) overlay.click();
+    });
+  });
+</script>
 </body>
 </html>

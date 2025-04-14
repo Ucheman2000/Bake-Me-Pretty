@@ -169,3 +169,28 @@ body {
       margin-bottom: 20px;
     }
   }
+
+  .lb-close {
+    background: #fff url('https://cdn-icons-png.flaticon.com/512/1828/1828774.png') no-repeat center center;
+    background-size: 60% 60%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: 1 !important;
+    top: 10px;
+    right: 10px;
+  }
+  #custom-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #d94f70;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
+  }
