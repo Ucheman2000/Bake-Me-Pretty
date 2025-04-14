@@ -324,3 +324,20 @@ body {
   .custom-order-note a:hover {
     color: #c25f80;
   }
+  .custom-order-note1 {
+    text-align: center;
+    font-size: 1rem;
+    color: #5a5a5a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-order-note1 a {
+    color: #e07c9a;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .custom-order-note1 a:hover {
+    color: #c25f80;
+  }
