@@ -212,11 +212,11 @@ body {
     display: none;
   }
   .gallery-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjusts column count */
     gap: 20px;
-    justify-content: center;
     padding: 20px;
+  }
   }
   
   .gallery-item {
