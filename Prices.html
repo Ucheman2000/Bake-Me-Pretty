@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery - Bake Me Pretty</title>
   <link rel="stylesheet" href="style.css">
+  <link href="css/lightbox.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Gallery - Bake Me Pretty</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="Gallery.html">Gallery</a>
       <a href="Prices.html">Prices</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -129,19 +130,26 @@
         </div>
       </section>
 
-      <section class="price-imageTitle"> 
-        <div class="Title-One"> 
-            <h1>Double Tier</h1>
-        </div>
-        <div class="Title-One">
-            <h2>Single Tier</h2>
-        </div>
-      </section>
+
     <!-- Two Large Images Side by Side -->
     <section class="price-images">
-      <img src="images/servingguide1.png" alt="Double tier serving guide">
-      <img src="images/servingguide2.png" alt="Single tier serving guide">
-    </section>
+        <div class="image-box">
+            <h3>Serving Guide 1</h3>
+          <a href="images/servingguide1.png" data-lightbox="guides" data-title="Serving Guide 1">
+            <img src="images/servingguide1.png" alt="Serving Guide 1">
+          </a>
+          
+        </div>
+      
+        <div class="image-box">
+            <h3>Serving Guide 2</h3>
+          <a href="images/servingguide2.png" data-lightbox="guides" data-title="Serving Guide 2">
+            <img src="images/servingguide2.png" alt="Serving Guide 2">
+          </a>
+          
+        </div>
+      </section>
+      
 
   
   </main>
@@ -149,5 +157,6 @@
   <footer>
     <p>Bake Me Pretty by Claire | Made with ❤️</p>
   </footer>
+  <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
