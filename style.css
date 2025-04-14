@@ -55,6 +55,41 @@ body {
     text-align: center;
   }
   
+  .reviews {
+    padding: 40px 20px;
+    background-color: #fff0f5;
+    text-align: center;
+  }
+  
+  .reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #c94f7c;
+  }
+  
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .review-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    font-style: italic;
+    position: relative;
+  }
+  
+  .review-card h4 {
+    margin-top: 15px;
+    color: #444;
+    font-weight: normal;
+  }
+
   .gallery-preview {
     display: flex;
     justify-content: center;
