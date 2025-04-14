@@ -7,9 +7,11 @@ body {
   }
   
   header {
-    background: #f9c5d1;
-    padding: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/polka-dot.png');
+    background-color: #ffe6f0; /* Light pink base */
+    padding: 2rem 1rem;
     text-align: center;
+    border-bottom: 3px solid #ffb6c1;
   }
   
   nav a {
@@ -97,82 +99,6 @@ body {
     box-shadow: 0 4px 8px #f9c5df
   }
   /* Style for two images side by side */
-.price-images {
-    display: flex;
-    justify-content: center;  /* Centers the images horizontally */
-    align-items: flex-start;  /* Centers the images vertically */
-    gap: 30px;  /* Space between the images */
-    margin: 40px 0;
-    flex-wrap: wrap;  /* This allows the items to wrap on small screens */
-  }
-  
-  .price-images img {
-    width: 45%;  /* Set both images to 45% width to make them the same size */
-    height: 1200px;  /* Set a fixed height to keep them the same size */
-    object-fit: cover;  /* Ensures the images fill the space without stretching */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px #f9c5df;
-  }
-  /* Style for the price list */
-.prices-container {
-    display: flex;
-    justify-content: space-between; /* Space out the items */
-    gap: 20px;  /* Adds space between the price items */
-    margin-top: 20px;
-    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
-  }
-  
-  .price-item {
-    text-align: center;
-    flex: 1;  /* Makes each price item take up equal width */
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .price-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .price-item p {
-    font-size: 1.2em;
-    color: #d94f70;  /* You can change this color */
-  }
-  .prices-list h2 {
-    text-align: center;
-  }
-
-  .price-images {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 40px 0;
-    flex-wrap: wrap;
-  }
-  
-  .image-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
-  }
-  
-  .image-box img {
-    width: 100%;
-    height: 1200px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-box h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #d94f70;
-    text-align: center;}
 
 @media (max-width: 768px) {
     .price-images {
@@ -308,4 +234,93 @@ body {
 
   footer p {
     margin: 0;
+  }
+  /* Prices Page */
+
+  .price-section {
+    padding: 3rem 1rem;
+    background-color: #fff0f5; /* soft pink/purple background */
+    border-radius: 1rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .price-section h2 {
+    margin-top: 2rem;
+    color: #b23a48; /* rich cherry red */
+    font-size: 1.8rem;
+    font-family: 'Georgia', serif;
+  }
+  
+  .price-table {
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .price-table th,
+  .price-table td {
+    border: 1px solid #f2d4e8;
+    padding: 14px 18px;
+    font-size: 1.1rem;
+  }
+  
+  .price-table th {
+    background-color: #ffe3ed;
+    color: #6d2947;
+    font-weight: bold;
+  }
+  
+  .price-table tr:nth-child(even) {
+    background-color: #fdf7fb;
+  }
+  
+  .price-table tr:hover {
+    background-color: #fbe8f3;
+    transition: 0.3s;
+  }
+  .order-button-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .order-button {
+    background-color: #f7c8d3; /* Light pink */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #e5a6b0; /* Slightly deeper pink */
+    transform: translateY(-2px);
+  }
+  .custom-order-note {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-order-note a {
+    color: #e07c9a;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .custom-order-note a:hover {
+    color: #c25f80;
   }
