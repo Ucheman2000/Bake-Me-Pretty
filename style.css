@@ -14,7 +14,50 @@ body {
     border-bottom: 3px solid #ffb6c1;
   }
   
+@font-face {
+  font-family: 'greatVibes';
+  src: url(Fonts/GreatVibes-Regular.ttf) format(truetype);
+}
+
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .site-titles h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: start;
+  }
+  
+  .site-titles h2 {
+    margin: 0;
+    font-family: 'greatvibes';
+    font-weight: 300;
+    font-size: 2rem;
+    color: #555;
+    text-align: start;
+  }
+  
+  .site-titles h3 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    text-align: start;
+  }
+
+  .logo img {
+    max-height: 100px;
+    width: 100px;
+    border-radius: 8px;
+  }
+
   nav a {
+    font-family: 'Pacifico', cursive;
     margin: 0 10px;
     text-decoration: none;
     color: #333;
@@ -22,6 +65,7 @@ body {
   
   footer {
     text-align: center;
+    font-size: 1.3rem;
     padding: 10px;
     background: #f0f0f0;
   }
@@ -118,6 +162,7 @@ body {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    
   }
   
   .review-card {
@@ -127,8 +172,29 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     font-style: italic;
     position: relative;
+    
   }
   
+  .review-card-last-row{
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    font-style: italic;
+    position: relative;
+    max-width: 250px;
+
+  }
+
+  .reviews-last-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+   
+
+  }
+
   .review-card h4 {
     margin-top: 15px;
     color: #444;
@@ -225,19 +291,26 @@ body {
   }
   
   .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   
   .gallery-item img {
     width: 100%;  /* Make images responsive */
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px; /* Optional: for rounded corners */
   }
   
   .image-title {
-    font-size: 1rem;
     margin-top: 10px;
     font-weight: bold;
+    height: 40px; /* ensures uniform height for all captions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* CONTACT US PAGE */
